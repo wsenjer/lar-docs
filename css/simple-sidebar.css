@@ -47,7 +47,9 @@
     position: absolute;
     margin-right: -250px;
 }
-
+img {
+    width: 100%;
+}
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -69,7 +71,12 @@
     text-decoration: none;
     color: #999999;
 }
-
+.sidebar-nav li a span{
+    color: #ffffff;
+    padding: 7px;
+    background: #5A5A5A;
+    border-radius: 5px;
+}
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
