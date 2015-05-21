@@ -49,6 +49,7 @@
 }
 img {
     width: 100%;
+    border: 1px solid #B3B3B3;
 }
 /* Sidebar Styles */
 
@@ -129,4 +130,12 @@ img {
         position: relative;
         margin-right: 0;
     }
+}
+
+h1 span{
+    font-size: 10pt;
+    color: #ffffff;
+    background: #CBCBCB;
+    padding: 5px;
+    border-radius: 5px;
 }
