@@ -13,7 +13,11 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
+#wrapper p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
 #wrapper.toggled {
     padding-left: 250px;
 }
