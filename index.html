@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Links Auto Replacer Documentation</title>
+    <title>Affiliate Butler Documentation</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,33 +35,32 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        Links Auto Replacer
-                    </a>
+                    <a href="#">Affiliate Butler</a>
+                    <span>(previously known as Links Auto Replacer)</span>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#overview">Overview</a>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#installation">Installation</a>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#install_pro">Installing the PRO version</a>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#settings">Settings</a>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#links_management">Links Management</a>
                 </li>
-                <li>
-                    <a href="#internal_linking">Internal Linking <span>PRO</span></a>
+                <li class="sidebar-appendix">
+                    <a href="#links_types">Links Types<span>PRO</span></a>
                 </li>
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#statistics">Statistics <span>PRO</span></a>
                 </li>
               
-                <li>
+                <li class="sidebar-appendix">
                     <a href="#support">Support</a>
                 </li>
                 
@@ -78,7 +77,7 @@
                     <div id="overview">
                         <h1>Overview</h1>
                         <img style="width:100%" src="images/head.png">
-                        <p>Links Auto Replacer is a WordPress plugin that helps you to replace a specific keywords to links automatically.
+                        <p>Affiliate Butler is a WordPress plugin that helps you to replace a specific keywords to links automatically.
                             Are you tired of linking websites in your post? This plugin will solve your problem. Link your keywords once and forget about them.
 
                             Are you an affiliate marketer, you don't have to insert your affiliate links manually every time you write a blog post.
@@ -94,7 +93,7 @@
                         <h3>Using The WordPress Dashboard</h3>
                         <ul>
                             <li>Navigate to the 'Add New' in the plugins dashboard</li>
-                            <li>Search for 'Links Auto Replacer'</li>
+                            <li>Search for 'Affiliate Butler'</li>
                             <li>Click 'Install Now'</li>
                             <li>Activate the plugin on the Plugin dashboard</li>
                         </ul>
@@ -129,7 +128,7 @@
                         <h1>Settings</h1>
                         <img src="images/W001.png">
                         <p>
-                            Links Auto Replacer comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned :)
+                            Affiliate Butler comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned :)
                         </p>
                         <ul>
                             <li><strong>Enable Auto Replcement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporiraly without deactivating the whole plugin, you just need to uncheck this option.</li>
@@ -137,6 +136,8 @@
                             <li><strong>Open in</strong> When the visitor click on the link, it's either open in a new window or the same window.</li>
                             <li><strong>Shrink?</strong> If you checked this option, the link will be shortened.</li>
                             <li><strong>Case Sensitive?</strong> The plugin will replace the keywords exactly according to the letters case.</li>
+                            <li><strong>Auto Link Taxonomies?</strong> Auto link categories and taxonomies terms to their archive pages whenever they appear in posts or pages.</li>
+                             <li><strong>Limits Per Post</strong> Limit the number of times that the keyword will be converted to a link per post.</li>
                         </ul>
                     </div>
 
@@ -167,13 +168,41 @@
                     
 
 
-                    <div id="internal_linking">
-                        <h1>Internal Linking <span>PRO Feature</span></h1>
+                    <div id="links_types">
+                        <h1>Links Types  <span>PRO Feature</span></h1>
                         <img src="images/W004.png">
                         <p>The <a href="http://www.waseem-senjer.com/product/links-auto-replacer-pro">PRO version</a> of the plugin has a cool feature, For example, if you want to link the keywords to a specific post or page, you only need to change the link type to "internal" and then choose the post or page by typing its title in the bottom select list as you see in the image above.</p>
+                    
+                        <h3>Auto Link with Image popup.</h3>
+                        <img src="images/WPOPIMAGE.png">
+                        <blockquote>Link keywords with Popup image.</blockquote>
+                        <img src="images/samples/image_sample.png">
+                        <blockquote>The result</blockquote>
+                        
+
+                        <h3>Auto Link with images gallery popup.</h3>
+                        <img src="images/WPOPGALLERY.png">
+                        <blockquote>Link keywords with Popup image.</blockquote>
+
+                        <h3>Auto Link with video popup.</h3>
+                        <img src="images/WPOPVIDEO.png">
+                        <blockquote>Link keywords with Popup video (Youtube and Vimeo supported).</blockquote>
+                        <img src="images/samples/sample_video.png">
+                        <blockquote>The result</blockquote>
+                        
+                        <h3>Auto Link with google maps.</h3>
+                        <img src="images/WPOPmap.png">
+                        <blockquote>Link keywords with google maps. (Dashboard)</blockquote>
+                        <img src="images/samples/map_sample.png">
+                        <blockquote>The result</blockquote>
+                         
+                        <h3>Auto Link keywords with a share tooltip.</h3>
+                        <img src="images/WPOPShared.png">
+                        <blockquote>Link keywords with a share tooltip (Dashboard)</blockquote>
+                        <img src="images/samples/shared_sample.png">
+                        <blockquote>The result</blockquote>
+
                     </div>
-
-
 
                     <div id="statistics">
                         <h1>Statistics <span>PRO Feature</span></h1>
@@ -189,7 +218,7 @@
                       <div id="support">
                         <h1>Support</h1>
                         <p>
-                            Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do you feel talking about coffee or how the dinosaurs got extinct? - I'm serious -. Do NOT hesitate dropping me <a href="http://waseem-senjer.com/submit-ticket/">a support ticket</a>.
+                            Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate dropping me <a href="https://waseem-senjer.com/submit-ticket/">a support ticket</a>.
                         </p>
 
                     </div>

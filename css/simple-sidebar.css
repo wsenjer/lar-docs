@@ -12,6 +12,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: tahoma !important;
 }
 #wrapper p{
     margin-top: 5px;
@@ -107,7 +108,18 @@ img {
     color: #fff;
     background: none;
 }
-
+.sidebar-nav > .sidebar-brand span{
+    font-size: 8pt;
+    display: inline;
+    bottom: 35px;
+    left:15px;
+    position: relative;
+    color: #ADADAD;
+    font-style: italic;
+}
+.sidebar-appendix a{
+    font-size: 12pt;
+}
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -142,4 +154,11 @@ h1 span{
     background: #CBCBCB;
     padding: 5px;
     border-radius: 5px;
+}
+
+blockquote{
+    margin-top:5px;
+    font-style: italic;
+    color:grey;
+    font-size: 10pt;
 }
