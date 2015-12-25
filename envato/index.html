@@ -1,0 +1,822 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Affiliate Butler Pro Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Affiliate Butler Pro&rdquo; Documentation by &ldquo;Waseem Senjer&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Affiliate Butler Pro&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 24/12/2015<br>
+					By: Waseem Senjer<br>
+					Email: <a href="mailto:waseem.senjer@gmail.com">waseem.senjer@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my plugin. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/anemoneapps">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#installation">Installation and Upgrade</a></li>
+            <ul>
+    			<li><a href="#upgrade">Upgrading</a></li>
+            </ul>
+			<li><a href="#settings">Settings</a></li>
+			<li><a href="#keywords_management">Keywords Management</a></li>
+			<li><a href="#links_types">Links Types</a></li>
+			<li><a href="#statistics">Statistics</a></li>
+			<li><a href="#support">Support</a></li>
+			<li><a href="#credits">Credits</a></li>
+			<li><a href="#intro">Intro</a></li>
+            <li><a href="#file">File Structure</a></li>
+          
+            <li><a href="#start">Quick Start Guide</a></li>
+            <li><a href="#features">Features Overview</a></li>
+			     <ul>
+                        <li><a href="#general">General Settings</a></li>
+			            <li><a href="#permalink">Permalinks and URLs</a> </li>
+                </ul>
+                
+            <li><a href="#solve_issues">Quick Fix Guide</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <ul>
+            	<li><strong><a href="http://codecanyon.net/item/hide-my-wp-no-one-can-know-you-use-wordpress/4177158/support">Latest FAQs online</a></strong></li>
+                <li><a href="#login">I can't login, what should I do now?</a></li>
+    			<li><a href="#change">Does it physically change my WordPress folders and files?</a></li>
+                <li><a href="#nginx">Does it works with Nginx ?</a></li>
+                <li><a href="#different">Why my settings page is different with official screenshots? </a> </li> 
+           
+                <li><a href="#logout">I hide both wp-login and wp-admin but I still can see them. Why?</a></li>
+    			<li><a href="#break">This plugin break my other plugins. What should I do?</a> </li>
+                <li><a href="#deactive">I change the plugin and it make my site ugly! Why?</a></li>
+    			<li><a href="#multisite">Is it multisite compatible?</a></li>
+            </ul>
+            <li><a href="#changelog">Changelog</a> </li>
+		
+		</ol>
+		<h3 id="intro"><strong>A) Intro</strong> - <a href="#toc">top</a></h3>
+	@TODO - With Affiliate Butler Pro nobody can know you use WordPress! This not only greatly increases your security against hackers, bad written plugins, robots, spammers, etc. but it also allows you to have more beautiful URLs and better control over WordPress.
+
+<br /> <br />     
+<strong>Author:</strong> Waseem Senjer<br />
+<strong>Author URL:</strong> https://waseem-senjer.com<br />
+
+<br />    
+
+<strong>Minimum Requirements</strong> 
+
+    <p>
+    <strong>WP version:</strong> 3.4+   <br />
+    <strong>Tested up to:</strong> 4.4 <br />
+    <strong>PHP Version:</strong> 5.0+  <br />
+	<br />        
+    </p> 
+
+		<hr>
+		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+			<h4><strong>Uploading in WordPress Dashboard</strong></h4>
+            <ul>
+                <li>Navigate to the 'Add New' in the plugins dashboard</li>
+                <li>Navigate to the 'Upload' area</li>
+                <li>Select affiliate-butler-pro.zip from your computer</li>
+                <li>Click 'Install Now'</li>
+                <li>Activate the plugin in the Plugin dashboard</li>
+            </ul>
+
+            <h4><strong>Using FTP</strong></h4>
+
+            <ul>
+                <li>Download affiliate-butler-pro.zip</li>
+                <li>Extract the affiliate-butler-pro directory to your computer</li>
+                <li>Upload the affiliate-butler-pro directory to the /wp-content/plugins/ directory</li>
+                <li>Activate the plugin in the Plugin dashboard</li>
+            </ul>
+
+		<h3 id="upgrade"><strong>Upgrading</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Simply go to Plugins page in admin panel and deactivate and delete the plugin.  
+This will remove your settings and now you can install new version.<br />
+        If you would like to store current settings do not deactivate it and just replace files.
+		</p>
+	
+        
+		<hr/>
+		
+		<h3 id="file"><strong>B. File Structure </strong> - <a href="#toc">top</a></h3>
+            <p><img style="float: right;border:1px solid #ccc;padding:3px;margin:3px;" src="assets/images/file.png">
+            If you extract downloaded ZIP file you should have this file structure. Main folder includes four subfolders and a PHP file.
+            
+            <ul>
+            
+            <li><strong>CSS folder</strong> includes one stylesheet (admin.css). It used for backend appearance.</li>
+            <li><strong>Documentation</strong> contains this document and its related files.</li>
+            <li><strong>img</strong> folder contains three icons with different sizes. These icons don't be used currently.</li>
+            <li><strong>js</strong> includes one javascript file (admin.js). It mainly used for live validation in settings page and depends on jQuery library.</li>
+            <li><strong>lang</strong> folder will store language files. MO files with appropriate name (e.g. hide_my_wp-en_US.mo) should be located here. </li>
+            
+            <li><strong>lib</strong> contains PHP files and a folder called 'mute-sceamer' used for IDS (since v4). </li>
+                <ul><li><strong>class.helper.php</strong> is a set of helper functions used in other PHP files. </li><li> <strong>class.settings-api</strong> help us to create our settings page base on WordPress settings API. </li><li> <strong>class.HTML-minify.php</strong> We use it for safe HTML compress. </li><li> <strong>class.CSS-minify</strong> used for safe CSS compress. </li></ul>
+            
+            <li><strong>hide_my_wp.php</strong> contains main plugin class. Almost everything will be done here.</li> 
+          
+            <li><strong>admin-settings.php</strong> used for admin panel settings.</li> 
+            </ul>
+            <div style="clear: both;"></div>
+
+
+		
+	
+        
+        <hr />
+        
+
+		
+		
+        <h3 id="start"><strong>D. Quick Start Guide</strong> - <a href="#toc">top</a></h3>
+        
+        <p>Hide My WP provides lots of cool features and all are well-organized, self-explaining and easy to use. </p>
+        <p>If you finished <a href="#autoinstall">installation</a> you should go to the plugin settings page and configure it. To do that navigate to the Settings menu and click Hide My WP.</p>
+        
+        <p> <center><img src="assets/images/start.png"/></center></p>
+        
+            </p>This is our settings page. In start tab you can import and export settings or simply use a pre-made settings scheme.  There is also a debug report generator used when you need help. You should provide it to our support team. </p>
+            
+            <p><a href="#general">General Settings</a> tab includes a number of general options about the plugin and WordPress. For example what page should be displayed as custom 404 page or which users should be assumed as trusted. You can also hide some aspects of WordPress. For example you can hide wp-admin folder or remove WordPress generated codes from source code there. </p>
+            
+            <p>One of the most characteristic aspects of WordPress is its URLs. Our <a href="#permalink">third tab</a> includes a number of settings allows you to disable or change these URLs. For example you can change path of your theme or disable WP feeds entirely.</p>
+            
+            <p>You can review our <a href="#features">features list</a> for detailed information but as a start let's change your feed URL.</p>
+            
+            <p>First check your feed address in your home page it should be something like http://yourdomain.com/feed/. Now Go to Permalinks & URLs tab and scroll down to find Feed section.  </p>
+             
+            
+            <p><center><img src="assets/images/feed.png"/></center></p> 
+            
+            
+                
+           <p>Enter something as Feed Base (e.g. rss) and click Save Settings. Check out your feed address again and booom!! it was changed. Now enter old URL in your browser and press enter. Oops! It can't be found!</p> 
+            
+           <p>Both feed base and feed query work similarly. Please note when permalink structure is enabled queries won't be used by WordPress itself but when someone type them in address bar they will work. This is a simple way to discover whether a site using WordPress or not so we always recommend changing queries, too. <p>
+            
+            
+            <p>If you are not a technical people or have not enough time to configure the plugin you can use our pre-made settings schemes. Go to start tab and choose a pre-made templates. Hide My WP has 3 pre-made settings scheme:  <p>
+            
+            <ul>
+                <li>Medium Privacy - More Compatibilty (Recommended)</li>
+                <li>Medium Privacy - Quick (Recommended)</li>
+                <li>High Privacy - Less Compatibility *</li>
+            
+            </ul>
+             
+            <p>High Privacy will enable almost all of Hide My WP features and bring maximum security and privacy but you may experience some incompatibilities with other plugins. If you don't have lots of heavy plugins feel free to use this option. <br/>Medium Privacy (Quick) is a general use settings and balance between security and compatibility. If you don't use a cache system we recommend using this scheme. <br/>Medium Privacy (More Compatibilty) is another general use scheme and everyone can use it. It focused on compatibility so it's slower than others. If you experienced problem with other plugins or you have a good hosting (or a cache plugin!) use this template.<br /> Please note in most cases incompatibility caused by one feature and you can just disable it.
+           </p>
+           
+           <p>
+            After choosing your appropriate settings scheme click Save Settings to implement changes. If you do this it will warn you against login address change. Click OK and finish importing.
+           </p>
+           
+           <p>
+            After importing, visit 'General Settings' tab. You probably see Hide wp-login.php as been checked. This means you no longer can login with old wp-login.php address obviously, because it's hided! To get your new address just add '?hide_my_wp=1234' to the old URL e.g. <b>http://domain.com/wp/wp-login.php?hide_my_wp=1234</b></p>
+            
+            <p>
+            1234 is default admin key. It's possible to change it to anything else within 'General Settings' tab. Admin key allows Hide My WP know you are a trusted user. In fact it is not a real password and you can securely give it to anyone who needs to login (e.g. members, editors, etc.) but it doesn't mean you can share it public!  </p>
+            
+            <p>
+            If you have a membership site with lots of members you may prefer to install <a href="http://wordpress.org/extend/plugins/theme-my-login/">Theme My Login</a> (instead email new address to all members). This plugin is free and doesn't need any key.</p>
+            
+        
+        <hr />                                 
+        
+        
+        <h3 id="features"><strong>E. Features Overview </strong> - <a href="#toc">top</a></h3>
+        
+        <p>Hide My WP includes lot of different options. Let's review some of them. </p>
+        
+        <h3 id="general"><strong> General Settings </strong> - <a href="#toc">top</a></h3>
+        
+        
+        
+         <p> <center><img src="assets/images/general.png"/> </center></p>
+         
+        
+            <h6>Custom 404 Page:</h6>
+            <p>When a user requests your hided files Hide My WP displays 404 page instead. You can use default 404 page from your current theme or make new page in your WordPress admin and use it as 404. Custom page allows you to have a cool and creative not found page.
+            </p>
+           
+            <h6>Trusted user rules:</h6>
+            <p>If you hide wp-admin folder other members can't see WordPress admin (even if they logged in successfully). You should choose their roles here to allow them to use admin panel. Administrators (like you) always are trusted! 
+            </p>
+            
+            <h6>Replace mode:</h6>
+            <p>Hide My WP automatically replace old URLs with new addresses. If you use a shared hosting or have not any cache plugin this may make your site a little slow. Here you have two choices: Partial mode and Full Page mode. First only replace URLs when needed but second scan all the output. In most cases Quick mode is enough and work correctly but if you use a plugin that generate old URLs Full Page mode may help. If you use a caching plugin (even with minimum configuration) you can freely ignore all quick modes.
+            </p>
+            
+            <h6>Hide wp-login.php:</h6>
+            <p>One of the easiest way to know whether a site using WordPress or not is adding wp-login.php to its site URL. Hide My WP will hide login address so no one can know you use WordPress. But there is a problem. If you hide your login page how can you login? We solve this issue with admin key. Admin key allows the plugin know you are a trusted user. You can change admin key to anything.
+            If you enabled this option and still see wp-login page see <a href="#logout">this answer</a>!
+            </p>
+            
+            <h6>Hide wp-admin folder:</h6>
+            <p> Another common way to know whether a site using WordPress or not is checking wp-admin folder you can hide it here. Trusted users still can access to admin panel without using admin key.</p>
+            
+            <h6>Spy notifier:</h6> 
+            <p>If you enable this option an email will be send to you whenever someone visit 404 page. This email includes some details about URL and user so you can find broken links and user who is researching about your site. Please note if you have a high traffic website a broken link may send lots of emails.</p>
+             
+             
+             <h6>Full Hide:</h6> 
+            <p>If your site can be discovered by CMS finder tools. Use this feature for even more privacy</p>
+             
+             
+             <h6>Remove Feed/Other Metas:</h6>
+             <p> If you check your site's source code you see some additional meta headers generated by WordPress. These metas includes feed URL for that specific page, previous and next posts, short links, Windows Live Writer tags, etc. Most of them used rarely and you can clean all of them by this option.</p>
+             
+             <h6>Remove body/post/menu classes:</h6>
+             <p>WordPress adds lots of CSS classes to some elements in your code. For example this is a body class: "home blog logged-in admin-bar no-customize-support". These classes let you change your theme using pure CSS and are useful when you have not access to PHP files (e.g. wordpress.com blogs). You usually don't use these classes but stick in your mind that some plugins and themes may use them for better appearance (e.g. Woo Commerce). <br/> We do not remove popular classes (like active menus classes). </p>
+             
+             <h6>Default Tagline:</h6>
+             <p> Your feed always displays blog tagline (even if your theme doesn't). So if you don't change default tagline you can hide it using this option. </p>
+             
+             <h6>Compress Page:</h6>
+             <p> There are always some html comments in your source code that can indicate you are using WordPress. This option not only remove these comments but it also compress your page and make it faster to load (and harder to read!). You can use Quick or Safe mode. First is faster but may have problem with non-standard pages. Safe is more compatibile but slower. I recommend to use this option (specially Safe mode) with a cache plugin.<br />   Also note this option won't remove any IE specific comments (e.g. [if IE 8]).   </p>
+             
+             
+             <h6>Hide PHP Files:</h6>
+             <p> This is an important feature and block direct access to all PHP files. This option greatly increase security but you should use it carefully. Some plugins need direct access php files (e.g. for importing feeds there is an import.php or for AJAX operations an ajax.php). To make these plugins work you need to know these files and add their path to except list.
+             <br/>Please note index.php, and other files used by WP are in except list by default. wp-login.php and wp-admin folder will be controlled by their own options.
+            <br/>There is also two options that helps you to use this feature without compatibility issues (exclude theme files and exclude plugins files).</p>
+             
+
+              <p><h6>Hide Other WP files:</h6> There are also some other WP files that are not PHP but can be used to indicate whether it's a WordPress site or not. This option will hide them. </p>
+              
+              <p><h6>Canonical Redirect:</h6> If you enabled permalink structure WordPress redirects old queries URLs (like ?p=2) to new one. If you want to use queries URLs you should enable this option. </p>
+              
+               <p><h6>Email Sender Name:</h6> WordPress sends email in its own name. You should change this to something meaningful (e.g. your site name)  </p>
+               
+               <p><h6>Email Sender Address:</h6> Default sender address is wordpress@domain.com. You can change it to info@yourdomain.com, no-reply@domain.com or something similar. </p>
+               
+               <p><h6>Replace in HTML:</h6> This is one of the most useful features in Hide My WP. There are some plugins that print credit link or additional data in your theme. You can replace or delete these words using this option. Just open your source code select and copy the text and replace it with something new. For example 'old=new' will replace all 'old' words with 'new'. Similarly, 'old=' will delete 'old' from your source code. Please note words in your posts will be change, too. </p>
+        
+        
+       
+         <hr />
+         
+       <h3 id="permalink"><strong>Permalink & URLs </strong> - <a href="#toc">top</a></h3>
+       
+         
+        
+        <p> <center><img src="assets/images/permalink.png"/> </center></p>
+        
+        <h6>New theme path:</h6>
+        <p> Here you can change your theme URL. All files and folders in your source code will be replace with new address for example /wp-content/themes/style.css will be replace with /template/style.css or wp-content/themes/twentytwelve/images/png/logo.png will be change to /template/images/png/logo.png. You can also use nested folders like test/static/skins/. Please note it's NOT possible to use plugins or wp-include pathes as a base folder for this field.   </p>
+        
+        <h6>New style path:</h6>
+        <p>In addition to theme path you can change style URL. You can use theme path or enter a new for style. For example if theme path is /template you can just rename style to main.css: /template/main.css or use a different url for style.css: /styles/css/main.css. 
+        
+        Although there is no limit for file name and you can use any extension or no extension (e.g. /path/style.php or /style/) but we recommend to don't be creative here.  
+       </p>
+       
+       <h6>Minify style:</h6>
+       <p> This option depends on New style path. If you change style path you can also minify its content. Almost all of style.css files have some information about the theme and its author. This information are available public and anybody can easily know this is a WordPress theme. This option not only removes this information but it also delete whitespaces and other CSS comments so your site will be a little faster. </p>
+              
+       <h6>Clean style:</h6>       
+       <p> WordPress needs some CSS classes to use for gallery and images. All themes should have these classes. This option will replace these classes with their new names (both in stylesheet and HTML). Here is more details:
+           <ul>
+               <li>wp-caption => x-caption</li>
+               <li> alignright=> x-right</li>
+               <li> alignleft => x-left</li>
+               <li>alignnone=>x-none</li>
+               <li> aligncenter=>x-center </li>   
+           </ul>
+       </p>
+              
+       <h6>New wp-includes path:</h6>       
+       <p>Most themes use javascript libraries come with WordPress. jQuery is one of the most popular libraries and located in wp-includes/js/jquery path. You can change wp-include path here. It's possible to use theme path as a base for this folder. For example if your new theme path is /template you can use template/lib/. </p>
+       
+       <h6>New plugin path:</h6> 
+       <p>Some plugins come with CSS and JS files. These files located in plugins folder so anybody can recognize this is a WordPress installation. This option helps you change wp-content/plugins/ path to something cleaner. It's also possible to use theme path as a base for this folder. For example if your new theme path is /template you can use template/ext/ here.</p>
+       
+        <h6>Rename plugins:</h6> 
+        <p>Even when you change plugins path it's still possible for others to know which plugins are active in your site. Checking this option will replace all path like /wp-content/plugins/woo-commerce/ with /modules/2hg1t7. </p>
+        
+       <h6>New upload path:</h6>  
+       <p>Just like new theme and plugins path this option will change /wp-content/uploads/ to something else. Please note this option is totally diffrent from WordPress change upload directory located in Settings->Media. As opposed to upload path in WordPress this option won't change  physical location. </p>
+       
+       <h6>Post Comment:</h6> 
+       <p>If you check your post source code you will see WordPress uses wp_comments_post.php to receive comments from visitors. Hide My WP let you change this file. user_commernts.php, /folder/comment.php and even /comment/ are all valid inputs for this field. In some cases this option may even work as an effective anti-spam technique.</p>
+       
+        <h6>AJAX URL:</h6> 
+        <p>Almost all of AJAX operations both in frontend and backend of WordPress handle by wp-admin/admin_ajax.php. You can change this path to anything else. Just like above ajax.php, /folder/my_ajax.php and even /ajax/ are all valid inputs. </p>
+        
+        
+        <hr />
+        <h3>WordPress Components</h3>
+        
+        
+        <p>Here you can disable, enable or change WordPress permalinks. Please note when permalink structure is enabled URL queries won't be used by WordPress itself but when you type them in address bar they will work. This is another way to know whether a site using WordPress or not so we always recommend changing queries, too.</p>
+        
+        <h6>Authors Options:</h6> 
+        <p>Here you can disable or enable authors links. You can also change authors URL structure here just enter something as Author Base and you see your authors links change to domain.com/something/username. Nested folders are also possible (something/somethingelse/username). Author Queries is changeable, too. If you want links like domain.com/?user=1, enter 'user' as author query.</p> 
+        
+        <p>Author without base is another cool feature. If you check it out your author links will be replaced with domain.com/username. This is cool but there are important notes about this feature: 
+            <ul>
+                <li>WordPress uses empty Page Base by default (domain.com/sample-page) when you enable this option it's hard for it to know which URL refer to an author and which one belongs to a page. Thus if you want this option you should enter something as Page Base (e.g.domain.com/base/sample-page).
+                </li>
+                <li>For the same reason, you can't use %post_name% or %postid% alone as Post Permalink. You should add something before or after to make them work. For example both '/archive/%postid%' or '/%year/%post_name%' are acceptable. </li></ul>
+                
+               </li>
+           </ul>
+       </p>
+       
+   
+        
+        <h6>Feeds Options:</h6>                    
+        <p>Just like author link you can disable feeds, too. This apply to all feeds (include global feeds, category feeds, comments feed, etc.)
+        
+        Feed Base indicates the end word of feed URLs and can be change to a file name (/rss.xml) or a nested folder path (/service/rss/).
+        
+        As we mentioned above it's better to change default Feed Queries. New URL will be domain.com/?your_feed_query=rss2 (instead /?feed=rss2)
+        
+        </p>
+        <p>In this case you may need to change your feedburner address or notify your old subscribers. 
+        </p>
+
+   
+       
+        <h6>Post Options:</h6>                    
+        <p>Here you can overwrite WordPress permalink structure and change the famous '/?p=123' URLs. If you disable post URLs no one can see a single post and therefore no one can comment but archive pages and blog pages may still display posts.
+        Please note if you use author without base feature you should not use %post_name% or %postid% alone as Post Permalink. Add something before or after to make them work. For example both '/archive/%postid%' or '/%year/%post_name%' are acceptable.     
+        </p> 
+        
+        
+        <h6>Page Options:</h6>                    
+        <p>Just like others, pages can be disabled here. It is notable WordPress don't use any base for pages by default. If you enter something as Page Base then links like /sample-page will be changed to /your-base/sample-page. This may not be so great but if you enable author without base it's require to add something as Page Base.
+        Please note 'Page Base' and 'Paginate Base' should have two different values. 
+        </p> 
+        
+        
+        <h6>Paginate Options:</h6>                    
+        <p>When you have lots of posts WordPress needs to paginate them. You see links like Older Entries or Next Posts in front page, categories pages, archive pages, etc.  It's possible to disable or change these URLs here but note Page and Paginate should have two different values for both base and query.   
+        </p> 
+        
+        <h6>Category/Tag/Search:</h6>                    
+        <p>Just like above you can disable or change these URLs. Category and tag bases will be overwrite WordPress permalink option. Search base will be used when you enable 'Search base redirect' option.   
+        </p>
+        
+        <h6>Search base redirect:</h6>                    
+        <p> When user hit search button and this option has been checked, he/she will be redirected to /search-base/keyword. This is prettier than default search query (/?s=keyword) and we recommend to use it.</p>
+        </p>
+        
+        
+        <h6>Disable Archive:</h6>                    
+        <p> Unless other components you can't change archive URLs in Hide My WP but it's still possible to disable them. This option will disable daily, monthly, yearly, hourly pages. It doesn't affect categories, tags and taxonomies.
+        </p>
+        
+        
+        <h6>Disable Other WP:</h6>                    
+        <p> There is still some more components you can disable with Hide My WP. Things like attachments, post types, taxonomies and comment pages can be disable here. It's important to know most of themes and plugins use post types and taxonomies for different purposes. Choosing this option make them unusable. In most cases you don't need this feature.
+        </p>
+        
+        <hr />
+        
+        <h3 id="solve_issues"><strong>F. Quick Fix Guide</strong> - <a href="#toc">top</a></h3>
+        <p>As <a href="#break">we said</a> because of the nature of WordPress 100% compatibility is not always accessible. But in most cases it's easy to use all plugins together with some changes in configurations.  </p>
+            
+            
+        <ol><li>Make sure you have a <strong>writable htaccess</strong> file (if you use Apache) or configured your web server manually (if you use Nginx or enabled multi-site). This is a must. Follow installation guide for more details.</li><li>Disable features that have an <strong>asterisk(*)</strong> in their names or use a more compatible settings scheme.</li><li>If you see some plugins related info in source code use Replace in HTML feature to remove them.</li><li>If you get 404 page make sure you didn't disable or hide require WP component before!</li></ol>
+        <p><div class="description">If you still have problem and you are sure it caused by HMW please provide debug report or login details (if possible) via a message (and not comment!) from author profile page in Codecanyon.</p>
+          
+          
+        
+        <hr />
+        
+        
+		<h3 id="faq"><strong>G. Frequently Asked Questions</strong> - <a href="#toc">top</a></h3>
+        	
+        	<h3><a href="http://codecanyon.net/item/hide-my-wp-no-one-can-know-you-use-wordpress/4177158/support">Latest FAQs online! </a></h3>
+        	
+            <h4 id="login"> <strong>= I can't login, what should I do now? =</strong> </h4>
+            <p>When you hide wp-login.php you should add your admin key to login address:<br /> 
+                e.g. your-wp-path.com/wp-login.php?hide_my_wp=1234 (default key is '1234')</p> 
+            
+            
+            <h4 id="change"> <strong>= Does it physically change my WordPress folders and files? =</strong> </h4> 
+            <p>No, everything remains in its default location and we just control access to them. This guarantees maximum compatibility.  </p>
+            
+            <h4 id="nginx"> <strong>= Does it works with Nginx? =</strong>   </h4>
+            <p>Nginx support has been added since version 1.5. You need root access to configure Nginx manually. Follow installation guide for more details.<br />
+                . </p>
+            
+            <h4 id="different"> <strong>= Why my plugin settings page is different with official screenshots? =</strong>   </h4>
+            <p>It's because you don't enable WordPress permalink structure or your host doesn't support rewrite URLs (specifically .htaccess file and mod_rewrite). Also note that screenshots may come from old versions. </p>
+            
+            <h4 id="logout"> <strong>= I hide both wp-login and wp-admin but I still can see them. Why?</strong> </h4> 
+            <p>Because you are a logged in administrator! Log out and try again. Don't forget to save new login address somewhere.</p>
+            
+            
+            <h4 id="break"> <strong>= This plugin break my other plugins. What should I do? =</strong> </h4>
+            
+            <p>As you may know, Hide My WP does not change any default WordPress location. It uses best practices to maximize compatibility with others but because of the nature of WordPress this is not always accessible.</p>
+            <p>Also, some programmers are not enough experienced with WordPress or simply choose the easiest way. This may cause some little problems. You can still use both plugins follow our <a href="#solve_issues">Quick Fix Guide</a>. </p>
+            
+            
+            <h4 id="deactive"> <strong>= I deactivated the plugin and it makes my site ugly! Why? =</strong> </h4>
+            <p>When the plugin deactivated suddenly by WP you should flush rewrite rules. Just go to admin panel and visit "Settings->Permalink". That's it and everything should work now!
+</p> 
+            
+
+            
+            <h4 id="multisite"> <strong>= Is it multisite compatible? =</strong>  </h4>
+            <p>Multisite support has been added to version 1.5. You need to configure your htaccess file manually. Follow installation guide for more details.
+            </p>
+
+        <h2><a href="http://codecanyon.net/item/hide-my-wp-no-one-can-know-you-use-wordpress/4177158/support">Read more FAQs online</a>
+        </h2>
+        
+        <hr/>
+        
+        
+        <h3 id="changelog"><strong>H. Changelog</strong> - <a href="#toc">top</a></h3>
+
+<p> 4.52 - 07/28/2015
+<ul>
+<li> Fixed: an important security bug </li>
+<li> Fixed: a php warning error</li>
+<li> Improved: Firewall run sooner to act faster</li>
+<li> Improved: Avoid direct access to PHP files now works with double extension files</li>
+<li> Improved: provided IP is more reliable now</li>
+
+</ul>
+</p>
+
+<p> 4.51 - 07/02/2015
+<ul>
+
+<li> Improved: Replace rules limitation has been increased to 30</li>
+<li> Improved: Better cover for wordpress </li>
+<li> Fixed: 500 error in old versions of Apache</li>
+<li> Fixed: A bug which prevents replace rules to be restored by undo button</li>
+
+</ul>
+</p>
+
+<p> 4.5 - 06/18/2015
+<ul>
+
+
+<li> New full hide feature to improve undetectability of WP and themes</li>
+<li> New CDN path tools which make it easy to setup CDN</li>
+<li> New path for wp-content (useful for some plugins which located in wp-content like cache plugins)</li>
+<li> Improved  Simplification of UI</li>
+<li> Improved: IDS for anti-XSS attacks</li>
+<li> Improved: antispam checks</li>
+<li> Improved: replacement tools to make it easy for everyone</li>
+<li> Improved: IDS system for slightly faster responses</li>
+<li> Fixed: reply email bug fix in Contact form 7</li>
+<li> Fixed: loading issue of HMWP_MS.CSS has been fixed</li>
+<li> Fixed: WP-Rocket-Minify incompatibility</li>
+
+</ul>
+</p>
+        <p> 4.03 - 02/13/2015
+        <ul>
+            <li>New Option to replace new URLs in AJAX  </li>
+            <li>BUG FIX: Inserting media with safe HTML compression </li>
+        </ul>
+        </p>
+
+        <p> 4.02 - 02/06/2015
+        <ul>
+            <li>Bug Fix: wp-signup.php was hided </li>
+            <li>Bug Fix: WP IDS rules were updated</li>
+            <li>Bug Fix: Make New admin path work in Multisite </li>
+            <li>Bug Fix: Purchase code remains after importing new settings </li>
+            <li>Bug Fix: New admin path for Nginx webserver </li>
+            <li>Improvment: IDS alert email is reformatted </li>
+            <li>Improvment: More readable info for IDS log </li>
+
+
+        </ul>
+        </p>
+
+        	<p> 4.01 - 11/12/2014
+                <ul>
+                
+                
+        		<li>Compatibility with Hyper Cache WP-Rocket</li>
+        		<li>General improvement for auto update</li>
+        		<li>A bug fix related to displaying message</li>
+        	
+			</ul>
+			</p>
+
+        	<p> 4.00 - 11/06/2014
+                <ul>
+                
+                
+        	<li>NEW: Introducing IDS (Intrusion Detection System) with customized rules for WP</li>
+<li>NEW: Auto plugin update (require valid purchase code)</li>
+<li>NEW: Finally official support for IIS (Windows servers!)</li>
+<li>NEW: Undo previous settings whenever you want!</li>
+<li>NEW: Light settings scheme was added</li>
+<li>NEW: Ability to use backslash in Replace in HTML</li>
+<li>IMPROVEMENT: Full compatibility for gantry-based themes</li>
+<li>IMPROVEMENT: Options mapper was written</li>
+<li>IMPROVEMENT: Automatic compatibility test has been added to guide users</li>
+<li>FIX a bug caused by author base default value</li>
+<li>FIX year numbers bug (for upload directory)</li>
+
+</ul>
+           </p>
+
+        	<p> 3.00 - 07/01/2014
+                <ul>
+                
+                <li>NEW: Ability to change wp-admin! (Cool but experimental!)</li>
+<li> NEW: Simple and sweet Anti-Spam system</li>
+<li> NEW: Disable directory listing for WP, plugins and themes directories </li>
+<li> WP 1.9 compatibility plus UI adjustment</li>
+<li> Deactivating HMWP now store saved settings</li>
+<li> API filter added for resetting plugin </li>
+<li> wp-cron.php and upgrade.php added to whitelist</li>
+<li> Fixed a bug in page preview</li>
+<li> Fixed problem with feed URL and canonical URLs</li>
+<li> Fixed multisite blogs table prefix</li>
+<li> Fixed new login address notification message</li>
+<li> Fixed multiple messages in settings page</li>
+<li> Fixed problem with minify plugins that cause 400 error</li>
+<li> Fixed base address for some multisite installs</li>
+<li> Fixed a bug in register URL </li>
+<li> Fixed a useless notice message</li>
+
+                   
+                </ul>
+           </p>
+        
+			<p> 2.2 - 11/20/2013
+                <ul>
+                    <li>Bug Fix: Now entering Purchase Code will remove annoying warning messages</li>
+					<li>Bug Fix: Compatibility with /subdirectory/subdirectory/(..) network-enabled installs </li>
+					<li>Improvement: WordPress 3.7 compatibility</li>
+					<li>Improvement: Add several colorful messages to better guide users  </li>
+                    <li>Bug Fix: Buddypress pages bug (in some conditions)</li>
+					<li>Bug Fix: Hide /wp-login.php/ URL</li>
+					<li>Bug Fix: Remove a notice warning in generating debug report</li>
+                </ul>
+           </p>
+		
+			<p> 2.1 & 2.11- 09/21/2013
+                <ul>
+                     <li> Bug Fix: A problem in replacing new URLs (2.11) </li>
+					 <li> New Feature: Login parameter 'hide_my_wp' is now changeable!</li>
+					 <li> Improvement: W3 Total Cache Minify module works now! (Read FAQ)</li>
+					 <li> Improvement: Better blocking of CMS finder tools</li>
+					 <li> Improvement: W3TC credit text will be removed automatically (for untrusted users)</li>
+					 <li> Improvement: Presstrends code added</li>
+					 <li> Bug Fix: Log out problem in some environments</li>
+					 <li> Bug Fix: Warning message appeared in some environments</li>
+					 <li> Bug Fix: A number of fixes in helper class</li>
+                     <li>Minor changes</li>
+                </ul>
+           </p>
+		   
+		   
+            <p> 2.0 - 07/10/2013
+                <ul>
+                    <li>Improvement: Full WordPress 3.6 compatibility</li>
+                    <li>Feature: Replace, rename or block access any file or folder</li>
+                    <li>Feature: Simple page compression added</li>
+                    <li>Feature: Block access of CMS finder tools to pages</li>
+                    <li>Improvement: Change order of header info to hide WP better </li>
+                    <li>Improvement: Add xmlrpc.php to excerpt list by default </li>
+                    <li>Improvement: Cached CSS age extended to 3 days</li>
+                    <li>Improvement: Better description and messages for easier configuration</li>
+                    <li>Bug Fix: Scheduling problem for plugins like Backup Buddy</li>
+                    <li>Bug Fix: Preview button problem in new post page</li>
+                    <li>Bug Fix: Problem in full SSL websites </li>
+                    <li>Bug Fix: Notice message appear in update settings </li>
+                    <li>Minor changes</li>
+                </ul>
+           </p>
+        
+        
+            <p> 1.8 - 06/08/2013
+                <ul>
+                    <li>Feature: Ability to choose manual configuration to use customized htaccess</li>
+                    <li>Improvement: Better quick fix guide</li>
+                    <li>Bug Fix: External uploaded WordPress images now works correctly</li>
+                    <li>Bug Fix: Trim Replace in HTML field</li>
+                    <li>Bug Fix: Better replace for WooCommerce plugins</li>
+                    <li>Minor changes</li>
+                </ul>
+           </p>
+           
+        
+            <p> 1.7 - 05/05/2013
+                <ul>
+                
+                <li>Feature: Ability to replace JS URLs (like \/wp-content\/themes)</li>
+                <li>Improvement: BulletProof Security plugin compatibility</li>
+                <li>Bug Fix: Child themes bug fix </li>
+                <li>Bug Fix: A bug in exporting Replace</li>
+                <li>Bug Fix: A bug in exporting values with double slashes</li>
+                <li>Minor changes</li>
+                </ul>
+           </p>
+           
+            <p> 1.6 - 04/20/2013
+                <ul>
+                
+                <li>Feature: Ability to rename all plugins (useful for plugins located in premium themes e.g. Layer Slider)</li>
+                <li>Improvement: New and better settings scheme</li>
+                <li>Improvement: Added quick fix guide to Start tab</li>
+                <li>Files: Update file structure to work with new Codecanyon changes</li>
+                <li>Bug Fix: ob_start bug fix for better compatibility </li>
+                <li>Bug Fix: Search widget bug</li>
+                <li>Bug Fix: Hide login, admin, etc. shortcuts</li>
+                <li>Bug Fix: Replace all AJAX URLs</li>
+                <li>Bug Fix: Fix a bug in Nginx rewrite rules in sub-folder installs </li>
+                <li>Documentation: Added documentation for Nginx and multisite configuration</li>
+                <li>Minor changes</li>
+                </ul>
+           </p>
+           
+            <p> 1.5 - 04/04/2013
+                <ul>
+                <li>Performance: Up to 3 times faster with new partial replace mode!</li>
+                <li>Feature: Nginx support</li>
+                <li>Feature: Child themes support</li>
+                <li>Feature: Multi-site support</li>
+                <li>Feature: Two different minify options for HTML and CSS</li>
+                <li>Feature: Better compatibility with two additional options for PHP files access</li>
+                <li>Feature: Option to hide _wpnonce and theme screenshot</li>
+                <li>Improvement: Better support for sub-directory installs</li>
+                <li>Improvement: More compatibility for class clean up options</li>
+                <li>Bug Fix: Style path bug</li>
+                <li>Bug Fix: Fixed login URL problem for better compatibility with login-related plugins</li>
+                <li>Minor bug fixes </li>
+                </ul>
+           </p>
+          
+          <p> 1.3 - 03/18/2013
+                <ul>
+                <li>Full Documentation</li>
+                <li>Better third-party compatibility</li>
+                <li>Minor bug fix</li>
+                </ul>
+          </p>
+          
+          <p> 1.2 - 02/30/2013
+                <ul><li>Bug Fix Release</li></ul>
+          </p>
+          <p> 1.0 - 02/15/2013
+                <ul><li>Initial release</li></ul>
+          </p>
+        <hr />
+        
+        <h3 id="credit"><strong>I. Credits</strong> - <a href="#toc">top</a></h3>
+            <p>Copyright 2013 Hassan Jahangiri</p>
+            <p>Some code from:
+            <ul>
+              <li>Dxplugin base by mpeshev</li>
+              <li>weDevs Settings API by Tareq Hasan</li>
+              <li>Plugin base v2 by Brad Vincent</li>
+              <li>Rootstheme by Ben Word </li>
+            </ul>
+            </p>
+        <hr />
+        
+		<p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest or plugins on CodeCanyon you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+
+
+		<h3 id="settings"><strong>B) Settings</strong> - <a href="#toc">top</a></h3>
+		<img src="assets/images/W001.png">
+                        <p>
+                            Affiliate Butler comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned.
+                        </p>
+                        <ul>
+                            <li><strong>Enable Auto Replcement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporiraly without deactivating the whole plugin, you just need to uncheck this option.</li>
+                            <li><strong>Dofollow?</strong> if you checked this option, you will allow search engines to follow this link and use it in ranking. It's simply add (rel=nofollow) if you unchecked it.</li>
+                            <li><strong>Open in</strong> When the visitor click on the link, it's either open in a new window or the same window.</li>
+                            <li><strong>Shrink?</strong> If you checked this option, the link will be shortened.</li>
+                            <li><strong>Case Sensitive?</strong> The plugin will replace the keywords exactly according to the letters case.</li>
+                            <li><strong>Auto Link Taxonomies?</strong> Auto link categories and taxonomies terms to their archive pages whenever they appear in posts or pages.</li>
+                             <li><strong>Limits Per Post</strong> Limit the number of times that the keyword will be converted to a link per post.</li>
+                        </ul>
+		<h3 id="keywords_management"><strong>C)  Keywords Management</strong> - <a href="#toc">top</a></h3>
+
+ <img src="assets/images/W002.png">
+                        <h3>Auto Links Table</h3>
+                        <p>
+                           This is the table where you find all your links, from this page you can (edit,delete) the link. Also, It will show the keywords of the link, the original link. You can go to this page from the Admin Menu (Auto Links &#8611; All Auto Links)
+                        </p>
+                        <h3>Add Auto Link</h3>
+                        <h5>"Auto Links" &#8611; "Add New Auto Link"</h5>
+                        <img src="assets/images/W003.png">
+                        <p>This is the main page where you will add the links with the keywords.
+
+                        <ol>
+                            <li>You can add one keywords or multiple keywords. To add another keyword, click on "Add Row" button and a text new text box will show up. Another keyword? click again on "Add Row"</li>
+                            <li>Now Add the required URL, When the visitor click on the keyword that you previously added, the plugin will take him to this URL.</li>
+                            <li>The other options I explained them in the <a href="#settings">Settings</a> section</li>
+                            <li>Last thing, There is an option called slug, This one is disabled by default, but if you choosed to "shrink" the link, this option will be activated with an auto generated text, you can change it if you want. </li>
+                        </ol>
+
+                        </p>
+
+		<h3 id="links_types"><strong>D) Links Types</strong> - <a href="#toc">top</a></h3>
+
+<img src="assets/images/W004.png">
+                        <p>The plugin has a cool features, For example, if you want to link the keywords to a specific post or page, you only need to change the link type to "internal" and then choose the post or page by typing its title in the bottom select list as you see in the image above.</p>
+                        <h2>Other available link types: </h2>
+                        <h3>Auto Link with Image popup.</h3>
+                        <img src="assets/images/WPOPIMAGE.png">
+                        <blockquote>Link keywords with Popup image.</blockquote>
+                        <img src="assets/images/samples/image_sample.png">
+                        <blockquote>The result</blockquote>
+                        
+
+                        <h3>Auto Link with images gallery popup.</h3>
+                        <img src="assets/images/WPOPGALLERY.png">
+                        <blockquote>Link keywords with Popup image.</blockquote>
+
+                        <h3>Auto Link with video popup.</h3>
+                        <img src="assets/images/WPOPVIDEO.png">
+                        <blockquote>Link keywords with Popup video (Youtube and Vimeo supported).</blockquote>
+                        <img src="assets/images/samples/sample_video.png">
+                        <blockquote>The result</blockquote>
+                        
+                        <h3>Auto Link with google maps.</h3>
+                        <img src="assets/images/WPOPmap.png">
+                        <blockquote>Link keywords with google maps. (Dashboard)</blockquote>
+                        <img src="assets/images/samples/map_sample.png">
+                        <blockquote>The result</blockquote>
+                         
+                        <h3>Auto Link keywords with a share tooltip.</h3>
+                        <img src="assets/images/WPOPShared.png">
+                        <blockquote>Link keywords with a share tooltip (Dashboard)</blockquote>
+                        <img src="assets/images/samples/shared_sample.png">
+                        <blockquote>The result</blockquote>
+
+
+
+		<hr>
+
+		<h3 id="statistics"><strong>E) Statistics</strong> - <a href="#toc">top</a></h3>
+        <p>
+            Even if the link was external, the plugin will be able to track the link and provides you with many statistics (Visits per day, Countries, Browsers, Operating Systems ). I will add more features in the statistics page in order to provide the plugin user of the maximum benefits of statistics and tracking.
+        </p>
+        <img src="assets/images/W005.png">
+        <img src="assets/images/W006.png">
+
+
+		<h3 id="support"><strong>F) Support</strong> - <a href="#toc">top</a></h3>
+	    <p>
+	        Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate dropping me <a href="https://waseem-senjer.com/submit-ticket/">a support ticket</a>.
+	    </p>
+
+
+		<h3 id="credits"><strong>G) Credits</strong> - <a href="#toc">top</a></h3>
+        <ul>
+            <li><a href="http://stephanwagner.me/jBox"> jBox</a> by Stephan Wagner</li>
+            <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a> by Dmitry Semenov</li>
+            <li><a href="https://github.com/WebDevStudios/CMB2">CMB2</a> by WebDevStudios</li>
+            <li><a href="https://github.com/select2/select2">Select2</a> - Select2 is a jQuery based replacement for select boxes.</li>
+            <li><a href="https://github.com/nnnick/Chart.js/">ChartJS</a> by Nick Downie</li>
+            <li><a href="https://github.com/manifestinteractive/jqvmap"> jQuery Vector Map Library</a> by Peter Schmalfeldt</li>
+        </ul>
+
+
+		<p class="append-bottom alt large"><strong>Waseem Senjer</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
