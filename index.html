@@ -60,6 +60,7 @@
                 <ul>
                     <li><a href="#externalurl">External URL</a></li>
                     <li><a href="#internalurl">Internal URL</a></li>
+                    <li><a href="#customhtmlpopup">Custom HTML Popup</a></li>
                     <li><a href="#imagepopup">Image Popup</a></li>
                     <li><a href="#gallerypopup">Gallery Popup</a></li>
                     <li><a href="#videopopup">Video Popup</a></li>
@@ -70,7 +71,7 @@
             <li><a href="#faq">Frequently Asked Questions</a></li>
             <ul>
                 
-                <li><a href="#disableautolinkingperpost">How to disable the auto linking for a specific post or page?</a></li>
+                <li><a href="#disableautolinkingperpost">How to disable the auto-linking for a specific post or page?</a></li>
                 <li><a href="#limitperpost">How to limit the number of times a keyword would be converted per post/page?</a></li>
             </ul>
             <li><a href="#support">Support</a></li>
@@ -121,7 +122,7 @@ Manage them in one place and create your own shortcuts via Keywords.
 		<h3 id="upgrade"><strong>Upgrading</strong> - <a href="#toc">top</a></h3>
 		
 		<p>Simply go to Plugins page in admin panel and deactivate and delete the plugin.  
-This will remove your settings and now you can install new version.<br />
+This will remove your settings and now you can install the new version.<br />
         If you would like to store current settings do not deactivate it and just replace files.
 		</p>
 	
@@ -130,11 +131,11 @@ This will remove your settings and now you can install new version.<br />
 		
 		<h3 id="file"><strong>C. File Structure </strong> - <a href="#toc">top</a></h3>
             <p><img style="float: right;border:1px solid #ccc;padding:3px;margin:3px;" src="assets/images/file.png">
-            If you extract downloaded ZIP file you should have this file structure. Main folder includes four subfolders and three PHP files.
+            If you extract downloaded ZIP file you should have this file structure. The main folder includes four subfolders and three PHP files.
             </p>
             <ul>
             
-            <li><strong>admin</strong> includes folders and PHP files which responsiple about the administration backend side.</li>
+            <li><strong>admin</strong> includes folders and PHP files which responsible about the administration backend side.</li>
             <li><strong>includes</strong> contains five PHP classes files, they do critical tasks such as activation and deactivation hooks. and loading other classes to the environment.</li>
             <li><strong>public</strong> includes the assets folders of the front-end tasks such as JS files which have the code for popups and tooltip. Also, it includes the main class which handles the keywords converting process.</li>
             <li><strong>languages</strong> folder will store language files. MO files with appropriate name (e.g. affiliate-butler-pro-en_US.mo) should be located here. </li>
@@ -160,7 +161,9 @@ This will remove your settings and now you can install new version.<br />
         <p>
 <img style="float: right;border:1px solid #ccc;padding:3px;margin:3px;" src="assets/images/abutler_menu_item.png">
         Affiliate Butler Pro provides lots of cool features and all are well-organized, self-explaining and easy to use. </p>
-        <p>If you finished <a href="#installation">installation</a>, a new menu item will be added to your administration menu. It's called <strong>"Affiliate Butler"</strong>. Under this menu item you will find all the plugin's related pages.</p>
+        <p>If you finished the <a href="#installation">installation</a>, a new menu item will be added to your administration menu. It's called <strong>"Affiliate Butler"</strong>. Under this menu item, you will find all the plugin's related pages.</p>
+       
+       <p>Note: The plugin will add a new custom post type called "Auto Link", Auto Link is simply the keyword/s which you want to auto-link them with one of the <a href="#links_types">link types</a> available by the plugin.</p>
         
         The submenu items are: 
         <ul>
@@ -170,20 +173,20 @@ This will remove your settings and now you can install new version.<br />
             <li><strong>Settings</strong> - The plugin's settings page where you can control the options of the plugin.</li>
         </ul>
        
-        
+
 
         
 
 		<h3 id="settings"><strong>E. Settings</strong> - <a href="#toc">top</a></h3>
 		<img src="assets/images/W001.png">
                         <p>
-                            Affiliate Butler comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned.
+                            Affiliate Butler comes with several settings to make you take full control of the plugin, thus, I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned.
                         </p>
                         <p>To access the settings page, Go to Affiliate Butler &#8611; Settings.</p>
                         <ul>
-                            <li><strong>Enable Auto Replcement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporiraly without deactivating the whole plugin, you just need to uncheck this option.</li>
-                            <li><strong>Dofollow?</strong> if you checked this option, you will allow search engines to follow this link and use it in ranking. It's simply add (rel=nofollow) if you unchecked it.</li>
-                            <li><strong>Open in</strong> When the visitor click on the link, it's either open in a new window or the same window.</li>
+                            <li><strong>Enable Auto Replacement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporarily without deactivating the whole plugin, you just need to uncheck this option.</li>
+                            <li><strong>Dofollow?</strong> if you checked this option, you will allow search engines to follow this link and use it in ranking. It simply adds (rel=nofollow) if you unchecked it.</li>
+                            <li><strong>Open in</strong> When the visitor clicks on the link, it's either open in a new window or the same window.</li>
                             <li><strong>Shrink?</strong> If you checked this option, the link will be shortened.</li>
                             <li><strong>Case Sensitive?</strong> The plugin will replace the keywords exactly according to the letters case.</li>
                             <li><strong>Auto Link Taxonomies?</strong> Auto link categories and taxonomies terms to their archive pages whenever they appear in posts or pages.</li>
@@ -194,7 +197,7 @@ This will remove your settings and now you can install new version.<br />
  <img src="assets/images/W002.png">
                         <h3>Auto Links Table</h3>
                         <p>
-                           This is the table where you find all your links, from this page you can (edit,delete) the link. Also, It will show the keywords of the link, the original link. You can go to this page from the Admin Menu (Auto Links &#8611; All Auto Links)
+                           This is the table where you find all your links, from this page you can (edit, delete) the link. Also, It will show the keywords of the link, the original link. You can go to this page from the Admin Menu (Auto Links &#8611; All Auto Links)
                         </p>
                         <h3>Add Auto Link</h3>
                         <h5>"Auto Links" &#8611; "Add New Auto Link"</h5>
@@ -202,10 +205,10 @@ This will remove your settings and now you can install new version.<br />
                         <p>This is the main page where you will add the links with the keywords.
 
                         <ol>
-                            <li>You can add one keywords or multiple keywords. To add another keyword, click on "Add Row" button and a text new text box will show up. Another keyword? click again on "Add Row"</li>
-                            <li>Now Add the required URL, When the visitor click on the keyword that you previously added, the plugin will take him to this URL.</li>
+                            <li>You can add one keyword or multiple keywords. To add another keyword, click on "Add Row" button and a text new text box will show up. Another keyword? click again on "Add Row"</li>
+                            <li>Now Add the required URL, When the visitor clicks on the keyword that you previously added, the plugin will take him to this URL.</li>
                             <li>The other options I explained them in the <a href="#settings">Settings</a> section</li>
-                            <li>Last thing, There is an option called slug, This one is disabled by default, but if you choosed to "shrink" the link, this option will be activated with an auto generated text, you can change it if you want. </li>
+                            <li>The last thing, There is an option called slug, This one is disabled by default, but if you chosen to "shrink" the link, this option will be activated with an auto-generated text, you can change it if you want. </li>
                         </ol>
 
                         </p>
@@ -220,13 +223,13 @@ This will remove your settings and now you can install new version.<br />
                             <li>Fill the keyword in the Keyword\s field</li>
                             <li>If you want to add another keyword, click on the "Add Row" button.</li>
                             <li>Change the "Link Type" select box value to "External".</li>
-                            <li>Insert the external url in the "URL (link)" field.</li>
+                            <li>Insert the external URL in the "URL (link)" field.</li>
                             <li>You can hit "Publish" now, but if you want to customize the link, see the following steps.</li>
-                            <li>Add the "Link Title", this will add the "title" attribute in the link html.</li>
+                            <li>Add the "Link Title", this will add the "title" attribute in the link HTML.</li>
                             <li>Check the "DoFollow?" field if you want search engines to follow and rank this link. </li>
                             <li>Select whether you want the link to open in a new window or in the same window from the "Open in" field.</li>
-                            <li>Check the "Shrink" field if you want to shorten the url. This would be useful if you have a very long url.</li>
-                            <li>If you checked the "Shrink" field, you can customize the shortened url slug in the "Slug" field.</li>
+                            <li>Check the "Shrink" field if you want to shorten the URL. This would be useful if you have a very long URL.</li>
+                            <li>If you checked the "Shrink" field, you can customize the shortened URL slug in the "Slug" field.</li>
                             <li>Click on "Publish" in the right side of the screen.</li>
                         </ol>
 
@@ -239,18 +242,35 @@ This will remove your settings and now you can install new version.<br />
                             <li>Fill the keyword in the Keyword\s field</li>
                             <li>If you want to add another keyword, click on the "Add Row" button.</li>
                             <li>Change the "Link Type" select box value to "Internal".</li>
-                            <li>At the "Internal URL (Link)" field, Start typing the title of the internal post or page which you want to make the keyowrd link point to, when the post/page appear click on it.</li>
+                            <li>At the "Internal URL (Link)" field, Start typing the title of the internal post or page which you want to make the keyword link point to when the post/page appears click on it.</li>
                             <li>You can hit "Publish" now, but if you want to customize the link, see the following steps.</li>
-                            <li>Add the "Link Title", this will add the "title" attribute in the link html.</li>
+                            <li>Add the "Link Title", this will add the "title" attribute in the link HTML.</li>
                             <li>Select whether you want the link to open in a new window or in the same window from the "Open in" field.</li>
-                            <li>Check the "Shrink" field if you want to shorten the url. This would be useful if you have a very long url.</li>
-                            <li>If you checked the "Shrink" field, you can customize the shortened url slug in the "Slug" field.</li>
+                            <li>Check the "Shrink" field if you want to shorten the URL. This would be useful if you have a very long URL.</li>
+                            <li>If you checked the "Shrink" field, you can customize the shortened URL slug in the "Slug" field.</li>
                             <li>Click on "Publish" in the right side of the screen.</li>
                         </ol>
                          <p>Watch the following video which illustrates the process.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/TW3lUHaraRM" frameborder="0" allowfullscreen></iframe>
                         
-                        <h3 id="imagepopup">3.  Image Popup.</h3>
+
+                        <h3 id="customhtmlpopup">3. Custom HTML Popup</h3>
+                        <p><strong>To add a custom HTML popup to a specific keyword/s, follow these steps:</strong></p>
+                        <ol>
+                            <li>Go to your WordPress Dashboard.</li>
+                            <li>Click on Affiliate Butler &#8611; Add New Auto Link</li>
+                            <li>Fill the keyword in the Keyword\s field
+                            </li>
+                            <li>If you want to add another keyword, click on the "Add Row" button.</li>
+                            <li>Change the "Link Type" select box value to "Popup".</li>
+                            <li>The "Popup Content" editor field will appear, you can add your custom HTML in this field.</li>
+                            <li>Click on "Publish" in the right side of the screen.</li>
+                        </ol>
+                        <p>Watch the following video which illustrates the process.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LY53d4ySLHM" frameborder="0" allowfullscreen></iframe>
+
+
+                        <h3 id="imagepopup">4.  Image Popup.</h3>
                         <p><strong>To add an image popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -267,7 +287,7 @@ This will remove your settings and now you can install new version.<br />
 
                        
 
-                        <h3 id="gallerypopup">4. Gallery Popup</h3>
+                        <h3 id="gallerypopup">5. Gallery Popup</h3>
                         <p><strong>To add a gallery popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -285,7 +305,7 @@ This will remove your settings and now you can install new version.<br />
 
 
 
-                        <h3 id="videopopup">5.  Video Popup</h3>
+                        <h3 id="videopopup">6.  Video Popup</h3>
                         <p><strong>To add a video popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -302,7 +322,7 @@ This will remove your settings and now you can install new version.<br />
 
 
 
-                        <h3 id="googlemapspopup">6.  Google Maps Popup</h3>
+                        <h3 id="googlemapspopup">7.  Google Maps Popup</h3>
                         <p><strong>To add a google maps popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -317,7 +337,7 @@ This will remove your settings and now you can install new version.<br />
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/hCsU3dw496w" frameborder="0" allowfullscreen></iframe>
 
 
-                        <h3 id="socialmediasharingtooltip">7.  Social Media Sharing Tooltip</h3>
+                        <h3 id="socialmediasharingtooltip">8.  Social Media Sharing Tooltip</h3>
                         <p><strong>To add a social media sharing tooltip to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -353,7 +373,7 @@ This will remove your settings and now you can install new version.<br />
         <h3 id="faq"><strong>I. Frequently Asked Questions</strong> - <a href="#toc">top</a></h3>
         
             
-        <h4 id="disableautolinkingperpost"> <strong>= How to disable the auto linking for a specific post or page? =</strong> </h4> 
+        <h4 id="disableautolinkingperpost"> <strong>= How to disable the auto-linking for a specific post or page? =</strong> </h4> 
         <p>Edit the Post/Page and you will find a met box called "Disable Affiliate Butler Pro for this post", then check the "disabled" checkbox and click update. This will disable the auto-linking for this post/page.  </p>
         <h4 id="limitperpost"> <strong>= How to limit the number of times a keyword would be converted per post/page? =</strong> </h4> 
         <p>Go to Affiliate Butler &#8611; Settings and add the number of times in the "Limits Per Post" field.</p>
@@ -362,7 +382,7 @@ This will remove your settings and now you can install new version.<br />
 
 		<h3 id="support"><strong>J. Support</strong> - <a href="#toc">top</a></h3>
 	    <p>
-	        Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate dropping me <a href="https://waseem-senjer.com/submit-ticket/">a support ticket</a>.
+	        Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate to drop me <a href="https://waseem-senjer.com/submit-ticket/">a support ticket</a>.
 	    </p>
 
 
