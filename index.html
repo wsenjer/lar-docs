@@ -10,6 +10,9 @@
 	<style type="text/css" media="screen">
 		p, table, hr, .box { margin-bottom:25px; }
 		.box p { margin-bottom:10px; }
+        img{
+            border:1px solid #ccc;padding:3px;margin:3px;
+        }
 	</style>
 </head>
 
@@ -49,7 +52,8 @@
     			<li><a href="#upgrade">Upgrading</a></li>
             </ul>
             <li><a href="#file">File Structure</a></li>
-          
+            <li><a href="#start">Quick Start Guide</a></li>
+            
 			<li><a href="#settings">Settings</a></li>
 			<li><a href="#keywords_management">Keywords Management</a></li>
 			<li><a href="#links_types">Links Types</a></li>
@@ -61,24 +65,20 @@
                     <li><a href="#videopopup">Video Popup</a></li>
                     <li><a href="#googlemapspopup">Google Maps Popup</a></li>
                 </ul>
-			<li><a href="#statistics">Statistics</a></li>
-
-            
-            <li><a href="#start">Quick Start Guide</a></li>
-           
+			<li><a href="#statistics">Statistics</a></li>       
                 
             <li><a href="#faq">Frequently Asked Questions</a></li>
             <ul>
                 
-                <li><a href="#nginx">Does it works with Nginx ?</a></li>
-               
+                <li><a href="#disableautolinkingperpost">How to disable the auto linking for a specific post or page?</a></li>
+                <li><a href="#limitperpost">How to limit the number of times a keyword would be converted per post/page?</a></li>
             </ul>
             <li><a href="#support">Support</a></li>
             <li><a href="#changelog">Changelog</a> </li>
 		    
             <li><a href="#credits">Credits</a></li>
 		</ol>
-		<h3 id="intro"><strong>A) Intro</strong> - <a href="#toc">top</a></h3>
+		<h3 id="intro"><strong>A. Intro</strong> - <a href="#toc">top</a></h3>
 	       Affiliate Butler Pro is a WordPress plugin that helps you to replace specific keywords to links automatically. Are you tired of linking websites in your post? This plugin will solve your problem. Link your keywords once and forget about them. Are you an affiliate marketer, you don’t have to insert your affiliate links manually every time you write a blog post. Also, it has a link shortening feature to hide and protect your links. Replace the keywords with External and Internal URLs, Image, Gallery, Maps and Videos popups, and social media sharing tooltip.
 
 Manage them in one place and create your own shortcuts via Keywords.
@@ -99,7 +99,7 @@ Manage them in one place and create your own shortcuts via Keywords.
     </p> 
 
 		<hr>
-		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+		<h3 id="installation"><strong>B. Installation</strong> - <a href="#toc">top</a></h3>
 			<h4><strong>Uploading in WordPress Dashboard</strong></h4>
             <ul>
                 <li>Navigate to the 'Add New' in the plugins dashboard</li>
@@ -128,7 +128,7 @@ This will remove your settings and now you can install new version.<br />
         
 		<hr/>
 		
-		<h3 id="file"><strong>B. File Structure </strong> - <a href="#toc">top</a></h3>
+		<h3 id="file"><strong>C. File Structure </strong> - <a href="#toc">top</a></h3>
             <p><img style="float: right;border:1px solid #ccc;padding:3px;margin:3px;" src="assets/images/file.png">
             If you extract downloaded ZIP file you should have this file structure. Main folder includes four subfolders and three PHP files.
             </p>
@@ -171,24 +171,15 @@ This will remove your settings and now you can install new version.<br />
         </ul>
        
         
-		<h3 id="faq"><strong>G. Frequently Asked Questions</strong> - <a href="#toc">top</a></h3>
-        	
-        	
-        
-            
-            <h4 id="change"> <strong>= Does it physically change my WordPress folders and files? =</strong> </h4> 
-            <p>No, everything remains in its default location and we just control access to them. This guarantees maximum compatibility.  </p>
-            
 
         
-        <hr/>
-        
 
-		<h3 id="settings"><strong>B) Settings</strong> - <a href="#toc">top</a></h3>
+		<h3 id="settings"><strong>E. Settings</strong> - <a href="#toc">top</a></h3>
 		<img src="assets/images/W001.png">
                         <p>
                             Affiliate Butler comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned.
                         </p>
+                        <p>To access the settings page, Go to Affiliate Butler &#8611; Settings.</p>
                         <ul>
                             <li><strong>Enable Auto Replcement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporiraly without deactivating the whole plugin, you just need to uncheck this option.</li>
                             <li><strong>Dofollow?</strong> if you checked this option, you will allow search engines to follow this link and use it in ranking. It's simply add (rel=nofollow) if you unchecked it.</li>
@@ -198,7 +189,7 @@ This will remove your settings and now you can install new version.<br />
                             <li><strong>Auto Link Taxonomies?</strong> Auto link categories and taxonomies terms to their archive pages whenever they appear in posts or pages.</li>
                              <li><strong>Limits Per Post</strong> Limit the number of times that the keyword will be converted to a link per post.</li>
                         </ul>
-		<h3 id="keywords_management"><strong>C)  Keywords Management</strong> - <a href="#toc">top</a></h3>
+		<h3 id="keywords_management"><strong>F.  Keywords Management</strong> - <a href="#toc">top</a></h3>
 
  <img src="assets/images/W002.png">
                         <h3>Auto Links Table</h3>
@@ -219,9 +210,9 @@ This will remove your settings and now you can install new version.<br />
 
                         </p>
 
-		<h3 id="links_types"><strong>D) Links Types</strong> - <a href="#toc">top</a></h3>
+		<h3 id="links_types"><strong>G. Links Types</strong> - <a href="#toc">top</a></h3>
 
-                        <h3 id="externalurl">External URL</h3>
+                        <h3 id="externalurl">1. External URL</h3>
                         <p><strong>To convert the keyword to external URL, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -240,7 +231,7 @@ This will remove your settings and now you can install new version.<br />
                         </ol>
 
 
-                        <h3 id="internalurl">Internal URL</h3>
+                        <h3 id="internalurl">2. Internal URL</h3>
                         <p><strong>To add an image popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -256,9 +247,10 @@ This will remove your settings and now you can install new version.<br />
                             <li>If you checked the "Shrink" field, you can customize the shortened url slug in the "Slug" field.</li>
                             <li>Click on "Publish" in the right side of the screen.</li>
                         </ol>
-
+                         <p>Watch the following video which illustrates the process.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TW3lUHaraRM" frameborder="0" allowfullscreen></iframe>
                         
-                        <h3 id="imagepopup">Image Popup.</h3>
+                        <h3 id="imagepopup">3.  Image Popup.</h3>
                         <p><strong>To add an image popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -275,7 +267,7 @@ This will remove your settings and now you can install new version.<br />
 
                        
 
-                        <h3 id="gallerypopup">Gallery Popup</h3>
+                        <h3 id="gallerypopup">4. Gallery Popup</h3>
                         <p><strong>To add a gallery popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -293,7 +285,7 @@ This will remove your settings and now you can install new version.<br />
 
 
 
-                        <h3 id="videopopup">Video Popup</h3>
+                        <h3 id="videopopup">5.  Video Popup</h3>
                         <p><strong>To add a video popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -310,7 +302,7 @@ This will remove your settings and now you can install new version.<br />
 
 
 
-                        <h3 id="googlemapspopup">Google Maps Popup</h3>
+                        <h3 id="googlemapspopup">6.  Google Maps Popup</h3>
                         <p><strong>To add a google maps popup to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -325,7 +317,7 @@ This will remove your settings and now you can install new version.<br />
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/hCsU3dw496w" frameborder="0" allowfullscreen></iframe>
 
 
-                        <h3 id="socialmediasharingtooltip">Social Media Sharing Tooltip</h3>
+                        <h3 id="socialmediasharingtooltip">7.  Social Media Sharing Tooltip</h3>
                         <p><strong>To add a social media sharing tooltip to a specific keyword/s, follow these steps:</strong></p>
                         <ol>
                             <li>Go to your WordPress Dashboard.</li>
@@ -344,9 +336,9 @@ This will remove your settings and now you can install new version.<br />
 
 		<hr>
 
-		<h3 id="statistics"><strong>E) Statistics</strong> - <a href="#toc">top</a></h3>
+		<h3 id="statistics"><strong>H. Statistics</strong> - <a href="#toc">top</a></h3>
         <p>
-            Even if the link was external or a popup, the plugin will be able to track the link and provides you with many statistics (Visits per day, Countries, Browsers, Operating Systems ). I will add more features in the statistics page in order to provide the plugin user of the maximum benefits of statistics and tracking.
+            Even if the link was external or a popup, the plugin will be able to track the link and provides you with many statistics (Visits per day, Countries, Browsers, Operating Systems and languages ). I will add more features in the statistics page in order to provide the plugin user of the maximum benefits of statistics and tracking.
         </p>
         <p>To see the statistics, follow these steps:</p>
         <ol>
@@ -358,13 +350,23 @@ This will remove your settings and now you can install new version.<br />
         <img src="assets/images/W006.png">
 
 
-		<h3 id="support"><strong>F) Support</strong> - <a href="#toc">top</a></h3>
+        <h3 id="faq"><strong>I. Frequently Asked Questions</strong> - <a href="#toc">top</a></h3>
+        
+            
+        <h4 id="disableautolinkingperpost"> <strong>= How to disable the auto linking for a specific post or page? =</strong> </h4> 
+        <p>Edit the Post/Page and you will find a met box called "Disable Affiliate Butler Pro for this post", then check the "disabled" checkbox and click update. This will disable the auto-linking for this post/page.  </p>
+        <h4 id="limitperpost"> <strong>= How to limit the number of times a keyword would be converted per post/page? =</strong> </h4> 
+        <p>Go to Affiliate Butler &#8611; Settings and add the number of times in the "Limits Per Post" field.</p>
+
+        <hr/>
+
+		<h3 id="support"><strong>J. Support</strong> - <a href="#toc">top</a></h3>
 	    <p>
 	        Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate dropping me <a href="https://waseem-senjer.com/submit-ticket/">a support ticket</a>.
 	    </p>
 
 
-        <h3 id="changelog"><strong>H. Changelog</strong> - <a href="#toc">top</a></h3>
+        <h3 id="changelog"><strong>K. Changelog</strong> - <a href="#toc">top</a></h3>
 
         <p> 1.0 - 24/12/2015
                 <ul><li>Initial release</li></ul>
@@ -372,7 +374,7 @@ This will remove your settings and now you can install new version.<br />
         <hr />
 
 
-		<h3 id="credits"><strong>G) Credits</strong> - <a href="#toc">top</a></h3>
+		<h3 id="credits"><strong>L. Credits</strong> - <a href="#toc">top</a></h3>
         <ul>
             <li><a href="http://stephanwagner.me/jBox"> jBox</a> by Stephan Wagner</li>
             <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a> by Dmitry Semenov</li>
